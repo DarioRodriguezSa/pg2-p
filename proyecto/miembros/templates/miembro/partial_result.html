@@ -1,0 +1,11 @@
+<!-- partial_result.html -->
+{% for miembro in miembros %}
+    <tr>
+        <td>{{ miembro.nombre }}</td>
+        <!-- Otros campos del miembro -->
+    </tr>
+{% empty %}
+    <tr>
+        <td colspan="10">No se encontraron resultados.</td>
+    </tr>
+{% endfor %}
